@@ -74,7 +74,7 @@
 % Geometry
 % ----------------------------------------------------------------------
 	\RequirePackage{geometry}
-	\geometry{a4paper,landscape, left=6mm,right=6mm, top=6mm, bottom=5mm,includefoot, footskip=1.7em}
+	\geometry{a4paper,landscape, left=6mm,right=6mm, top=6mm, bottom=5mm}
 
 
 % Multicolumn
@@ -116,17 +116,11 @@
 	\newcommand{\issueslinkurl}{https://github.com/latex4ei/Allgemein/issues} % Default URL placeholder
 	\newcommand{\setissueslinkurl}[1]{\renewcommand{\issueslinkurl}{#1}}
 
-	\fancyfoot[R]{\EngGer{Last revised}{Stand}: \themydate \qquad \thepage/\pageref{LastPage}}
-	\fancyfoot[L]{Homepage: \url{\thewebsite} -- \EngGer{Please \href{\issueslinkurl}{report} mistakes \emph{immediately}}{Fehler bitte \emph{sofort} \href{\issueslinkurl}{melden}}.}
-
 
 % Title
 % ----------------------------------------------------------------------
 	\providecommand{\fstitle}[1]{
 		\vspace{-20mm}{
-		\parbox{2.3cm}{
-			\includegraphics[height=1.4cm]{Logo.pdf}
-		}
 		\parbox{4cm}{
 			\huge\textbf{#1}
 		}}
